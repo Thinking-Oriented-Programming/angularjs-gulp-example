@@ -167,11 +167,11 @@ gulp.task('watch', function() {
 /////////////////////////////////////////////////////////////////////////////////////
 
 gulp.task('webserver', ['watch','build'], function() {
-    gulp.src('.')
+    gulp.src('dist')
         .pipe(webserver({
             livereload: false,
             directoryListing: true,
-            open: "http://localhost:8000/dist/index.html"
+            open: "http://localhost:8000/index.html"
         }));
 });
 
