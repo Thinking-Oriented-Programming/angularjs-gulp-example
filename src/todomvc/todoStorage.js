@@ -7,7 +7,6 @@
  * They both follow the same API, returning promises for all changes to the
  * model.
  */
-angular = require('angular');
 
 angular.module('todomvc')
 	.factory('todoStorage', function ($http, $injector) {

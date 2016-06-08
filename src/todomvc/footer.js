@@ -4,7 +4,7 @@ angular.module('todomvc')
 
         return {
             restrict: 'E',
-            templateUrl: '/partials/footer.html'
+            templateUrl: '/todomvc/footer.html'
         };
 
     });

@@ -6,7 +6,6 @@
  * @type {angular.Module}
  */
 
-angular = require('angular');
 require('angular-route');
 require('../dist/templateCachePartials');
 
@@ -16,7 +15,7 @@ angular.module('todomvc', ['ngRoute','todoPartials'])
 
 		var routeConfig = {
 			controller: 'TodoCtrl',
-			templateUrl: '/partials/todomvc-index.html',
+			templateUrl: '/todomvc/todomvc-index.html',
 			resolve: {
 				store: ['todoStorage', function (todoStorage) {
 					// Get the correct module (API or localStorage).
@@ -33,8 +32,8 @@ angular.module('todomvc', ['ngRoute','todoPartials'])
 			});
 	});
 
-require('todoCtrl');
-require('todoStorage');
-require('todoFocus');
-require('todoEscape');
-require('footer');
+require('./todomvc/todoCtrl');
+require('./todomvc/todoStorage');
+require('./todomvc/todoFocus');
+require('./todomvc/todoEscape');
+require('./todomvc/footer');

@@ -5,7 +5,6 @@
  * expression it binds to evaluates to true
  */
 
-angular = require('angular');
 
 angular.module('todomvc')
 	.directive('todoFocus', function todoFocus($timeout) {

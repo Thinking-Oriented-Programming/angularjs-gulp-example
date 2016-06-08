@@ -5,8 +5,6 @@
  * an `escape` keydown event.
  */
 
-angular = require('angular');
-
 angular.module('todomvc')
 	.directive('todoEscape', function () {
 		'use strict';
